@@ -37,3 +37,14 @@ dydis_atrinktu = length(s_atrinktas);
 %e)
 max_filtruotas = max(s_filtruotas);
 min_filtruotas = min(s_filtruotas);
+
+%papildoma 21 variantas
+A = [0 1 0 2 3 0 4;
+     0 0 0 0 0 0 0;
+     0 5 0 6 7 0 8;
+     0 9 0 1 2 0 3;
+     0 0 0 0 0 0 0;
+     0 4 0 5 6 0 7];
+Eilutes = any(A ~= 0, 2);
+Stulpeliai = any(A ~= 0, 1);
+B = A(Eilutes, Stulpeliai)
